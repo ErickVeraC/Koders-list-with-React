@@ -4,7 +4,7 @@ function Tarjetas({ koders }) {
       {koders.map((profile, index) => (
         <div key={index} className="p-4 border rounded shadow-md">
           <img
-            src={`https://github.com/${profile.github}.png`}
+            src={`${profile.github}.png`}
             alt={`${profile.nombre} ${profile.apellido}`}
             className="w-16 h-16 rounded-full mb-4"
           />
