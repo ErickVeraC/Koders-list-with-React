@@ -37,10 +37,9 @@ function Formulario({ addKoder }) {
         <input
           type="text"
           {...register("nombre")}
-          className={clsx(
-            "input rounded w-full h-10",
-            errors.nombre && "border-red-500"
-          )}
+          className={clsx("input rounded w-full h-10", {
+            "border-red-500 bg-gray-100": errors.nombre,
+          })}
           placeholder="Pon tu nombre"
           style={{ color: "#151311" }}
         />
@@ -51,10 +50,9 @@ function Formulario({ addKoder }) {
         <input
           type="text"
           {...register("apellido")}
-          className={clsx(
-            "input rounded w-full h-10",
-            errors.apellido && "border-red-500"
-          )}
+          className={clsx("input rounded w-full h-10", {
+            "border-red-500 bg-gray-100": errors.apellido,
+          })}
           placeholder="Pon tu apellido"
           style={{ color: "#151311" }}
         />
@@ -65,10 +63,9 @@ function Formulario({ addKoder }) {
         <input
           type="text"
           {...register("github")}
-          className={clsx(
-            "input rounded w-full h-10",
-            errors.github && "border-red-500"
-          )}
+          className={clsx("input rounded w-full h-10", {
+            "border-red-500 bg-gray-100": errors.github,
+          })}
           placeholder="Pon el link de tu GitHub"
           style={{ color: "#151311" }}
         />

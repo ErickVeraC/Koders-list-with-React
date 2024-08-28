@@ -10,11 +10,11 @@ export default function App() {
   };
 
   return (
-    <div className="flex h-screen">
-      <div className="w-1/3 p-4">
+    <div className="grid grid-cols-12 h-screen">
+      <div className="col-span-4 p-4 flex items-center">
         <Formulario addKoder={addKoder} />
       </div>
-      <div className="w-2/3 p-4">
+      <div className="col-span-8 p-4">
         <Tarjetas koders={koders} />
       </div>
     </div>
