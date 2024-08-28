@@ -49,7 +49,7 @@ export default function App() {
 
 ### Despliegue
 
-Puedes ver el proyecto desplegado en Vercel en el siguiente enlace:
+Puedes ver el proyecto desplegado en Vercel en el siguiente enlace: https://koders-list-with-react.vercel.app/
 
 ### Instalación y Uso
 
